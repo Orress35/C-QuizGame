@@ -7,5 +7,5 @@ A quiz game that can read questions from a file
 **install GCC & paste this into the terminal:**
 gcc quiz.c -o quiz
 
-**then run with**
+**then run with:**
 ./quiz
