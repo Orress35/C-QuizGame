@@ -10,22 +10,25 @@ bool same(char* x, char* y)
 {
     if (strlen(x) != strlen(y))
         return false;
+    
     for (int i = 0; i < strlen(x); i++)
         if (tolower(x[i]) != tolower(y[i]))
             return false;
+    
     return true;
 }
 
 void ask(char* question, char* answer)
 {
     printf("%s", question);
+    
     char input[64];
     scanf("%s", input);
-    if (same(input, answer)) {
+    
+    if (same(input, answer))
         printf("Correct!\n");
-    } else {
+    else
         printf("Wrong. The correct answer was: %s\n", answer);
-    }
 }
 
 bool askNextQuestion(FILE* fp)
